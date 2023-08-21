@@ -22,7 +22,7 @@ function BasicExample(props) {
   return (
     <Navbar expand="lg" bg='dark' className="bg-body-tertiary">
       <Container>
-        <Navbar.Brand href="#home">Candy Store</Navbar.Brand>
+        <Navbar.Brand href="#home">T-shirt Store</Navbar.Brand>
       </Container>
       <Button variant="warning" onClick={clickCartHandler}>Cart {q}</Button>
     </Navbar>

@@ -34,7 +34,7 @@ function Cart() {
         </Modal.Body>
 
         <Modal.Footer>
-          <Button variant="secondary">Close</Button>
+          <Button variant="secondary">Cancel</Button>
           <Button variant="primary">Buy</Button>
         </Modal.Footer>
       </Modal.Dialog>

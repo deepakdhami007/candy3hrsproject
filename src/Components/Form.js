@@ -28,7 +28,7 @@ function Formc() {
   return (
     <Form>
       <Form.Group className="mb-3" controlId="formBasicEmail">
-        <Form.Label>Candy</Form.Label>
+        <Form.Label>T-shirt</Form.Label>
         <Form.Control type="text" ref={candyInputRef} />
         <Form.Label>Description</Form.Label>
         <Form.Control type="text" ref={desInputRef} />
@@ -36,7 +36,7 @@ function Formc() {
         <Form.Control type="text" ref={priceInputRef} />
       </Form.Group>
       <Button variant="primary" type="submit" onClick={submitHandler}>
-        Add
+        Add Product
       </Button>
     </Form>
   );

@@ -3,24 +3,23 @@ import React, { useEffect, useState } from "react";
 import CartContext from "./cart-context";
 
 const CartProvider = (props) => {
-
-   const [itemsArr, setItemsArr] = useState([]);
+  const [itemsArr, setItemsArr] = useState([]);
 
   const addItemHandler = async (candy) => {
-    setItemsArr([...itemsArr, candy])
+    setItemsArr([...itemsArr, candy]);
 
-    const res = await axios.post('https://crudcrud.com/api/8f095beff086403ca4efb4a2961fe492/cart', candy);
+    await axios.post('https://crudcrud.com/api/665e1887aa3d4b3d8727dc7175231a4d/cart', candy);
   };
 
   const onRefresh = async () => {
-      const res =  await axios.get('https://crudcrud.com/api/8f095beff086403ca4efb4a2961fe492/cart');
-      const items = res.data;
-      setItemsArr(items)
-  }
+    const res = await axios.get('https://crudcrud.com/api/665e1887aa3d4b3d8727dc7175231a4d/cart');
+    const items = res.data;
+    setItemsArr(items);
+  };
 
-  useEffect(()=>{
-      onRefresh()
-  },[])
+  useEffect(() => {
+    onRefresh();
+  }, []);
 
   const cartContext = {
     items: itemsArr,
