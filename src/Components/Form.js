@@ -17,18 +17,18 @@ function Formc() {
         const enteredPrice = priceInputRef.current.value;
         
 
-        const candyI ={
-            candyName: enteredCandy,
+        const medicineI ={
+            medicineName: enteredCandy,
             des: enteredDes,
             price: enteredPrice
         }
-        listCtx.addListItem({...candyI});
+        listCtx.addListItem({...medicineI});
     }
 
   return (
     <Form>
       <Form.Group className="mb-3" controlId="formBasicEmail">
-        <Form.Label>T-shirt</Form.Label>
+        <Form.Label>Medicine</Form.Label>
         <Form.Control type="text" ref={candyInputRef} />
         <Form.Label>Description</Form.Label>
         <Form.Control type="text" ref={desInputRef} />
